@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+    *{
+    margin:0;
+    padding: 0;
+    }
+    #map{
+    width: 100vw;
+    height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+    
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmFqZWV2MzQiLCJhIjoiY2tqbHA2MWl5NjR3czJybGdiaW8zYWhtNSJ9.xtzaWB_hicsY5V7txn8k6g';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/dark-v10',
+zoom: 1,
+center:[0,34]
+});
+</script>
+<script src="index.js"></script>
+</html>
